@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Grinta.ai]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="reports.MyListener"/>
+  </listeners>
+  <test thread-count="1" parallel="tests" name="Test Start Grinta web application and search for product(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="test_cases.Testcase001_SearchingProducts">
+        <methods>
+          <include name="prepareClassProperties"/>
+          <include name="SearchProducts"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- test_cases.Testcase001_SearchingProducts -->
+    </classes>
+  </test> <!-- Test Start Grinta web application and search for product(failed) -->
+</suite> <!-- Failed suite [Grinta.ai] -->
